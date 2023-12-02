@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Recipe Template || Final</title>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+        <!-- normalize -->
+        <link rel="stylesheet" href="Deisgn/normalize.css" />
+        <!-- font-awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+        <!-- main css -->
+        <link rel="stylesheet" href="Deisgn/main.css" />
+    <style>
+       body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.add-recipe-form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#add-recipe-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#add-recipe-form label {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+#add-recipe-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#add-recipe-form input[type="submit"] {
+    background-color: #e44d26;
+    color: #fff;
+    cursor: pointer;
+}
+
+#add-recipe-form input[type="submit"]:hover {
+    background-color: #333;
+}
+
+.recipe {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#recipe-container {
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-center">
+        <div class="nav-header">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.svg" alt="simply recipes" />
+            </a>
+            <button class="nav-btn btn">
+                <i class="fas fa-align-justify"></i>
+            </button>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link"> Home </a>
+            <a href="about.html" class="nav-link"> About </a>
+            <a href="tags.html" class="nav-link"> Tags </a>
+            <a href="recipes.html" class="nav-link"> Recipes </a>
+            <a href="seasonals.html" class="nav-link">Seasonals</a>
+            <a href="cookbook.html" class="nav-link">Cookbook</a>
+            <a href="community.html" class="nav-link">Community</a>
+            <a href="share recipe.html" class="nav-link">Share</a>
+            <a href="faqs.html" class="nav-link">FAQS</a>
+        </div>
+    </div>
+    <div class="nav-link contact-link">
+        <a href="contact.html" class="contact"> Contact </a>
+    </div>
+    <div class="container" id="login-form">
+        <a href="login.html" class="login">Login</a>
+    </div>
+    <div id="signup-form">
+        <a href="sign-up.html" class="signup">Sign Up</a>
+    </div>
+</nav>
+    <h1>Share Recipes</h1>
+
+    <div class="add-recipe-form">
+        <form id="add-recipe-form">
+            <label for="recipe-name">Recipe Name:</label>
+            <input type="text" id="recipe-name" name="recipe-name" required>
+            
+            <label for="recipe-description">Recipe Description:</label>
+            <input type="text" id="recipe-description" name="recipe-description" required>
+            
+            <input type="submit" value="Add Recipe">
+        </form>
+    </div>
+
+    <div class="recipe" id="recipe-container">
+    </div>
+
+    <script>
+        const addRecipeForm = document.getElementById('add-recipe-form');
+        const recipeContainer = document.getElementById('recipe-container');
+
+        addRecipeForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const recipeName = document.getElementById('recipe-name').value;
+            const recipeDescription = document.getElementById('recipe-description').value;
+
+            const newRecipe = document.createElement('div');
+            newRecipe.classList.add('recipe');
+
+            newRecipe.innerHTML = `
+                <h2>${recipeName}</h2>
+                <p>${recipeDescription}</p>
+            `;
+
+            recipeContainer.appendChild(newRecipe);
+
+            // Clear the form fields
+            document.getElementById('recipe-name').value = '';
+            document.getElementById('recipe-description').value = '';
+        });
+    </script>

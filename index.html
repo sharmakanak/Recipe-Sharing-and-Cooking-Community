@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simply Recipes || Final</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  <!-- normalize -->
+  <link rel="stylesheet" href="Deisgn/normalize.css" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="Deisgn/main.css" />
+  
+</head>
+
+<body>
+  <!-- nav  -->
+  <nav class="navbar">
+    <div class="nav-center">
+        <div class="nav-header">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.svg" alt="simply recipes" />
+            </a>
+            <button class="nav-btn btn">
+                <i class="fas fa-align-justify"></i>
+            </button>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link"> Home </a>
+            <a href="about.html" class="nav-link"> About </a>
+            <a href="tags.html" class="nav-link"> Tags </a>
+            <a href="recipes.html" class="nav-link"> Recipes </a>
+            <a href="seasonals.html" class="nav-link">Seasonals</a>
+            <a href="cookbook.html" class="nav-link">Cookbook</a>
+            <a href="community.html" class="nav-link">Community</a>
+            <a href="share recipe.html" class="nav-link">Share</a>
+            <a href="faqs.html" class="nav-link">FAQS</a>
+        </div>
+    </div>
+    <div class="nav-link contact-link">
+        <a href="contact.html" class="contact"> Contact </a>
+    </div>
+    <div class="container" id="login-form">
+        <a href="login.html" class="login">Login</a>
+    </div>
+    <div id="signup-form">
+        <a href="sign-up.html" class="signup">Sign Up</a>
+    </div>
+</nav>
+  <!-- end of nav -->
+  <!-- main -->
+  <main class="page">
+    <!-- header -->
+    <header class="hero">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>simply recipes</h1>
+          <h4>no fluff, just recipes</h4>
+        </div>
+      </div>
+    </header>
+    <!-- end of header -->
+    <section class="recipes-container">
+      <!-- tag container -->
+      <div class="tags-container">
+        <h4>recipes</h4>
+        <div class="tags-list">
+          <a href="tag-template.html">Beef (1)</a>
+          <a href="tag-template.html">Breakfast (2)</a>
+          <a href="tag-template.html">Carrots (3)</a>
+          <a href="tag-template.html">Food (4)</a>
+        </div>
+      </div>
+      <!-- end of tag container -->
+      <!-- recipes list -->
+      <div class="recipes-list">
+        <!-- single recipe -->
+        <a href="single-recipe.html" class="recipe">
+          <img src="images/recipe-1.jpeg" class="img recipe-img" alt="" />
+          <h5>Carne Asada</h5>
+          <p>Prep : 15min | Cook : 5min</p>
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="single-recipe.html" class="recipe">
+          <img src="images/recipe-2.jpeg" class="img recipe-img" alt="" />
+          <h5>Greek Ribs</h5>
+          <p>Prep : 15min | Cook : 5min</p>
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="single-recipe.html" class="recipe">
+          <img src="images/soup.jpeg" class="img recipe-img" alt="" />
+          <h5>Vegetable Soup</h5>
+          <p>Prep : 15min | Cook : 5min</p>
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="single-recipe.html" class="recipe">
+          <img src="images/banana-pancakes-recipe-square.jpg" class="img recipe-img" alt="" />
+          <h5>Banana Pancakes</h5>
+          <p>Prep : 30min | Cook : 15min</p>
+        </a>
+        <!-- end of single recipe -->
+      </div>
+      <!-- end of recipes list -->
+    </section>
+  </main>
+  <!-- end of main -->
+  <!-- footer -->
+  <footer class="page-footer">
+    <p>
+      &copy; <span id="date"></span>
+      <span class="footer-logo">SimplyRecipes</span> Built by
+    <p>Coding Addict</p>
+    </p>
+  </footer>
+  <script>
+    function toggleMenu() {
+      var menu = document.querySelector('.menu-items');
+      menu.classList.toggle('show');
+    }
+  </script>
+</body>
+
+</html>

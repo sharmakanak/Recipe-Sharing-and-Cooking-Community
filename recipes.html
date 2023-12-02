@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipes || Final</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  <!-- normalize -->
+  <link rel="stylesheet" href="Deisgn/normalize.css" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="Deisgn/main.css" />
+</head>
+
+<body>
+  <!-- nav  -->
+  <nav class="navbar">
+    <div class="nav-center">
+        <div class="nav-header">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.svg" alt="simply recipes" />
+            </a>
+            <button class="nav-btn btn">
+                <i class="fas fa-align-justify"></i>
+            </button>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link"> Home </a>
+            <a href="about.html" class="nav-link"> About </a>
+            <a href="tags.html" class="nav-link"> Tags </a>
+            <a href="recipes.html" class="nav-link"> Recipes </a>
+            <a href="seasonals.html" class="nav-link">Seasonals</a>
+            <a href="cookbook.html" class="nav-link">Cookbook</a>
+            <a href="community.html" class="nav-link">Community</a>
+            <a href="share recipe.html" class="nav-link">Share</a>
+            <a href="faqs.html" class="nav-link">FAQS</a>
+        </div>
+    </div>
+    <div class="nav-link contact-link">
+        <a href="contact.html" class="contact"> Contact </a>
+    </div>
+    <div class="container" id="login-form">
+        <a href="login.html" class="login">Login</a>
+    </div>
+    <div id="signup-form">
+        <a href="sign-up.html" class="signup">Sign Up</a>
+    </div>
+</nav>
+  <!-- end of nav -->
+  <!-- main -->
+  <main class="page">
+    <section class="recipes-container">
+      <!-- tag container -->
+      <div class="tags-container">
+        <h4>recipes</h4>
+        <div class="tags-list">
+          <a href="tag-template.html">Healthy Salads</a>
+          <a href="breakfast.html">Breakfast</a>
+          <a href="Lunch.html">Lunch</a>
+          <a href="Dinner.html">Dinner</a>
+        </div>
+      </div>
+      <!-- end of tag container -->
+      <!-- recipes list -->
+      <div class="recipes-list">
+        <!-- single recipe -->
+        <a href="single-recipe.html" class="recipe">
+          <img src="images/download (1).jpeg" class="img recipe-img" alt="" />
+          <h5>Capri Salad</h5>
+          <p>Prep : 15min | Cook : 5min</p>
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="single-recipe.html" class="recipe">
+          <img src="images/kale-caesar-crispy-chickpeas.jpg" class="img recipe-img" alt="" />
+          <h5>Crispy Chickpea Caesar</h5>
+          <p>Prep : 15min | Cook : 5min</p>
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="single-recipe.html" class="recipe">
+          <img src="images/download.jpeg" class="img recipe-img" alt="Broccoli Almond Crunch" />
+          <h5>Broccoli Almond Crunch</h5>
+          <p>Prep : 15min | Cook : 5min</p>
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="single-recipe.html" class="recipe">
+          <img src="images/Cucumber mint.jpeg" class="img recipe-img" alt="Cucumber Salad" />
+          <h5>Cucumber Mint Refresh</h5>
+          <p>Prep : 15min | Cook : 5min</p>
+        </a>
+        <!-- end of single recipe -->
+      </div>
+    </section>
+  </main>
+  <!-- end of main -->
+  <!-- footer -->
+  <footer class="page-footer">
+    <p>
+      &copy; <span id="date"></span>
+      <span class="footer-logo">SimplyRecipes</span> Built by
+    <p>Coding Addict</p>
+    </p>
+  </footer>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

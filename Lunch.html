@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Template || Final</title>
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+  <!-- normalize -->
+  <link rel="stylesheet" href="Deisgn/normalize.css" />
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- main css -->
+  <link rel="stylesheet" href="Deisgn/main.css" />
+</head>
+
+<body>
+  <!-- nav  -->
+  <nav class="navbar">
+    <div class="nav-center">
+        <div class="nav-header">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.svg" alt="simply recipes" />
+            </a>
+            <button class="nav-btn btn">
+                <i class="fas fa-align-justify"></i>
+            </button>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link"> Home </a>
+            <a href="about.html" class="nav-link"> About </a>
+            <a href="tags.html" class="nav-link"> Tags </a>
+            <a href="recipes.html" class="nav-link"> Recipes </a>
+            <a href="seasonals.html" class="nav-link">Seasonals</a>
+            <a href="cookbook.html" class="nav-link">Cookbook</a>
+            <a href="community.html" class="nav-link">Community</a>
+            <a href="share recipe.html" class="nav-link">Share</a>
+            <a href="faqs.html" class="nav-link">FAQS</a>
+        </div>
+    </div>
+    <div class="nav-link contact-link">
+        <a href="contact.html" class="contact"> Contact </a>
+    </div>
+    <div class="container" id="login-form">
+        <a href="login.html" class="login">Login</a>
+    </div>
+    <div id="signup-form">
+        <a href="sign-up.html" class="signup">Sign Up</a>
+    </div>
+</nav>
+  <!-- end of nav -->
+  <main class="page">
+    <div class="featured-recipes">
+      <h4>Lunch</h4>
+      <!-- recipes list -->
+      <div class="recipes-list">
+        <!-- single recipe -->
+        <a href="single-recipe.html" class="recipe">
+          <img src="images/grilled-chicken.jpg"class="img recipe-img" alt="" />
+          <h5>Grilled Chicken</h5>
+          <p>Prep : 130min | Cook : 80min</p>
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="single-recipe.html" class="recipe">
+          <img src="images/downloaLettuce.jpeg" class="img recipe-img" alt="" />
+          <h5>Lettuce</h5>
+          <p>Prep : 120min | Cook : 30min</p>
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="single-recipe.html" class="recipe">
+          <img src="images/Lasagna.jpg" class="img recipe-img" alt="" />
+          <h5>Lasagna</h5>
+          <p>Prep : 45min | Cook : 20min</p>
+        </a>
+        <!-- end of single recipe -->
+        <!-- single recipe -->
+        <a href="single-recipe.html" class="recipe">
+          <img src="images/Dumplings.jpeg" class="img recipe-img" alt="Omelette" />
+          <h5>Dumplings</h5>
+          <p>Prep : 30min | Cook : 15min</p>
+        </a>
+        <a href="single-recipe.html" class="recipe">
+          <img src="images/Cheeseburger.jpg" class="img recipe-img" alt="Cheese Burger" />
+          <h5>Cheese Burger</h5>
+          <p>Prep : 40min | Cook : 15min</p>
+        </a>
+        <a href="single-recipe.html" class="recipe">
+          <img src="images/green-pea-fritters-.jpg" class="img recipe-img" alt="Fritters" />
+          <h5>Green Fritters</h5>
+          <p>Prep : 35min | Cook : 20min</p>
+        </a>
+        <!-- end of single recipe -->
+      </div>
+      <!-- end of recipe list -->
+    </div>
+
+  </main>
+  <!-- footer -->
+  <footer class="page-footer">
+    <p>
+      &copy; <span id="date"></span>
+      <span class="footer-logo">SimplyRecipes</span> Built by
+      <p>Coding Addict</p>
+    </p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
